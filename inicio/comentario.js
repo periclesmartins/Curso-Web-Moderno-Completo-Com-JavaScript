@@ -9,4 +9,4 @@ teclado
 mesa
 caixa de pizza
 */
-//Essas são as duas maneiras de comentar em javascript, os comentários não afetam o código.
+console.log('Essas são as duas maneiras de comentar em javascript, os comentários não afetam o código.')
