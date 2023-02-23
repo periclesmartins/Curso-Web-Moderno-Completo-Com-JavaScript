@@ -41,3 +41,27 @@ function divide(a, b) {
 /*
 Nesse exemplo, a função divide verifica se o divisor é igual a zero e, se for, lança um erro manualmente com a instrução throw new Error("Não é possível dividir por zero"). Quando a função divide é chamada com um divisor igual a zero, um erro é lançado e capturado pelo bloco catch.
 */
+
+//mas porque usar isso? Não é melhor resolver os erros ao invés de usar isso aí? Não entendi...
+
+/*
+Boa pergunta! É importante tentar resolver os erros sempre que possível, mas nem todos os erros podem ser previstos ou resolvidos com antecedência. Além disso, se um erro ocorrer durante a execução de um script, sem tratamento adequado, ele pode interromper completamente a execução do script, o que pode ser muito prejudicial em alguns casos.
+
+O tratamento de erros com try...catch é uma forma de lidar com esses erros de uma forma mais segura e controlada. Com esse mecanismo, o código dentro do bloco try é executado normalmente, e se houver algum erro, ele é capturado e tratado no bloco catch, sem interromper a execução do restante do script.
+
+Além disso, o bloco try...catch também pode ser usado para fornecer informações mais úteis sobre o erro que ocorreu, como mensagens de erro mais descritivas ou até mesmo a linha de código em que o erro ocorreu, o que pode facilitar a depuração e correção de erros.
+
+Aqui está um exemplo de como usar try...catch em JavaScript:
+*/
+try {
+    // código que pode gerar um erro
+    const resultado = 10 / x;
+  } catch (e) {
+    // tratamento do erro
+    console.error('Ocorreu um erro:', e);
+  }
+/*
+No exemplo acima, o código dentro do bloco try tenta executar uma operação de divisão por zero, o que gera um erro. Em vez de interromper a execução do script, o erro é capturado e tratado no bloco catch, que exibe uma mensagem de erro mais descritiva no console do navegador.
+
+Espero que isso ajude a esclarecer por que o tratamento de erros com try...catch é uma boa prática em JavaScript!
+*/
